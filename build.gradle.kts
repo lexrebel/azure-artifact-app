@@ -20,6 +20,7 @@ repositories {
             password = System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") ?: ""
         }
     }
+    mavenLocal()
 }
 
 dependencies {
