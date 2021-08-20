@@ -12,8 +12,14 @@ version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
-    mavenLocal()
     mavenCentral()
+    maven {
+        url = uri("https://pkgs.dev.azure.com/lexrebello/poc-azure-artifact/_packaging/poc/maven/v1")
+        credentials {
+            username = "poc"
+            password = System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") ?: ""
+        }
+    }
 }
 
 dependencies {
