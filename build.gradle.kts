@@ -29,7 +29,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    compileOnly("com.alexrebello:poc-azure-artifacts:1.0-SNAPSHOT")
+    implementation("com.alexrebello:poc-azure-artifacts:1.0-SNAPSHOT")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
